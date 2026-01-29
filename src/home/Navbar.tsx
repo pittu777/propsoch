@@ -40,13 +40,12 @@ export default function NavBar() {
     <header className="w-full fixed top-6 z-50 bg-white/80 backdrop-blur border-b">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
 
-        {/* Logo */}
+       
         <div className="flex items-center gap-2">
           <Image src={Logo} alt="logo" width={32} height={32} />
           <span className="font-bold text-lg">MyProduct</span>
         </div>
 
-        {/* Desktop Menu */}
         <NavigationMenu className="hidden lg:block">
           <NavigationMenuList>
             {["Products", "Solutions", "Pricing", "Services"].map((item) => (
@@ -69,13 +68,13 @@ export default function NavBar() {
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Desktop Right */}
+       
         <div className="hidden lg:flex items-center gap-3">
           <Input placeholder="Search" className="w-50" />
           <Button>Get Started</Button>
         </div>
 
-        {/* Mobile Menu */}
+        
         <div className="lg:hidden">
           <Sheet>
             <SheetTrigger>

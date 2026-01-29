@@ -11,7 +11,7 @@ export default function SmartSave() {
     <section className="py-24 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-        {/* LEFT SIDE */}
+      
         <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold">
             Choose the smart way to save
@@ -41,7 +41,7 @@ export default function SmartSave() {
           </p>
         </div>
 
-        {/* RIGHT SIDE CARD */}
+       
         <Card className="bg-white text-black">
           <CardContent className="p-8 space-y-6 text-center">
             <div className="text-sm text-gray-500">

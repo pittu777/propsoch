@@ -9,8 +9,6 @@ import {
 } from "@/components/ui/accordion";
 import { Tabs, TabsList } from "@radix-ui/react-tabs";
 import { TabsContent, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent } from "@/components/ui/card";
-
 
 export default function CommunityFAQ() {
   return (
@@ -29,7 +27,7 @@ export default function CommunityFAQ() {
           </p>
         </div>
 
-        {/* TABS */}
+       
         <Tabs defaultValue="service" className="max-w-4xl mx-auto">
 <TabsList className="flex overflow-x-auto gap-2 mb-8 md:grid md:grid-cols-4">
   <TabsTrigger value="service" className="whitespace-nowrap">
@@ -47,7 +45,7 @@ export default function CommunityFAQ() {
 </TabsList>
 
 
-          {/* TAB 1 */}
+         
           <TabsContent value="service">
             <Accordion type="single" collapsible>
 
@@ -84,7 +82,7 @@ export default function CommunityFAQ() {
             </Accordion>
           </TabsContent>
 
-          {/* TAB 2 */}
+         
           <TabsContent value="fees">
             <Accordion type="single" collapsible>
 
@@ -121,7 +119,7 @@ export default function CommunityFAQ() {
             </Accordion>
           </TabsContent>
 
-          {/* TAB 3 */}
+          
           <TabsContent value="why">
             <Accordion type="single" collapsible>
 
@@ -158,7 +156,7 @@ export default function CommunityFAQ() {
             </Accordion>
           </TabsContent>
 
-          {/* TAB 4 */}
+         
           <TabsContent value="trust">
             <Accordion type="single" collapsible>
 
@@ -197,7 +195,7 @@ export default function CommunityFAQ() {
 
         </Tabs>
 
-        {/* SUPPORT CTA */}
+       
         <div className="text-center mt-10 space-y-4">
           <h3 className="text-2xl font-semibold">
             Still have questions?

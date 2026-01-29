@@ -69,13 +69,13 @@ const testimonials = [
     ))}
   </CarouselContent>
 
-  {/* Buttons below for mobile & tablet */}
+  
   <div className="flex justify-center gap-4 mt-6 lg:hidden">
     <CarouselPrevious className="static" />
     <CarouselNext className="static" />
   </div>
 
-  {/* Buttons on sides for desktop */}
+  
   <div className="hidden lg:block">
     <CarouselPrevious />
     <CarouselNext />

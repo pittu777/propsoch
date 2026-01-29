@@ -39,9 +39,9 @@ export default function JourneyWithTestimonials() {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* TOP SECTION */}
+       
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* LEFT */}
+         
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">
               We're with you every step of the journey
@@ -55,7 +55,7 @@ export default function JourneyWithTestimonials() {
             <Button size="lg">Book An Appointment</Button>
           </div>
 
-          {/* RIGHT IMAGE */}
+         
           <div className="relative w-full h-62.5 hidden md:flex items-center justify-center">
             <Image
               src={journeyImage}
@@ -66,7 +66,7 @@ export default function JourneyWithTestimonials() {
           </div>
         </div>
 
-        {/* TESTIMONIAL SLIDER */}
+      
         <div className="mt-20 relative">
 
           <Carousel
@@ -102,13 +102,13 @@ export default function JourneyWithTestimonials() {
               ))}
             </CarouselContent>
 
-            {/* Desktop buttons (sides) */}
+            
             <div className="hidden lg:block">
               <CarouselPrevious />
               <CarouselNext />
             </div>
 
-            {/* Mobile & Tablet buttons (bottom) */}
+           
             <div className="flex justify-center gap-4 mt-6 lg:hidden">
               <CarouselPrevious className="static translate-y-0" />
               <CarouselNext className="static translate-y-0" />

@@ -37,7 +37,7 @@ export default function Hero() {
           </p>
         </div>
 
-       {/* RIGHT SIDE */}
+       
 <div className="hidden lg:flex relative w-full h-100 items-center justify-center">
   <Image
     src={heroImage}

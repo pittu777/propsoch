@@ -5,7 +5,7 @@ export default function Stats() {
     <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Top text */}
+       
         <div className="text-center mb-16">
           <p className="text-sm text-gray-500">
             Trusted by 1000+ intelligent homebuyers
@@ -15,7 +15,6 @@ export default function Stats() {
           </h2>
         </div>
 
-        {/* Metrics */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
           <div>
             <div className="text-4xl font-bold">2750+</div>
@@ -38,7 +37,7 @@ export default function Stats() {
           </div>
         </div>
 
-        {/* Bottom copy */}
+   
         <div className="text-center mt-16 max-w-2xl mx-auto text-gray-600">
           1000+ intelligent homebuyers trusted us with their biggest life
           decision because we helped them know if it was the right one.

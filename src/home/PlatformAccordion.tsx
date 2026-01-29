@@ -12,7 +12,7 @@ export default function PlatformAccordion() {
     <section className="py-10 bg-white">
       <div className="max-w-5xl mx-auto px-6">
 
-        {/* Title */}
+       
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
             Meet India’s most advanced real estate platform
@@ -22,7 +22,7 @@ export default function PlatformAccordion() {
           </p>
         </div>
 
-        {/* Accordion */}
+      
         <Accordion type="single" collapsible className="w-full">
 
           <AccordionItem value="item-1">

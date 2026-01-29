@@ -20,12 +20,12 @@ export default function Footer() {
 
   return (
     <footer className="bg-black text-white py-10 relative overflow-hidden">
-      {/* Glow background */}
+     
       <div className="absolute inset-0 bg-linear-to-r from-orange-500/10 via-pink-500/10 to-purple-500/10 blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-6">
 
-        {/* BIG BRAND */}
+      
         <motion.h1
           initial={{ backgroundPosition: "0% 50%" }}
           animate={{ backgroundPosition: "100% 50%" }}
@@ -42,7 +42,7 @@ export default function Footer() {
           homebuyers in India
         </p>
 
-        {/* Social Icons */}
+        
         <div className="flex justify-center gap-6 mt-6">
           <Linkedin className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition" />
           <Twitter className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition" />
@@ -50,7 +50,7 @@ export default function Footer() {
           <Facebook className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer transition" />
         </div>
 
-        {/* GRID */}
+       
         <div className="grid md:grid-cols-4 gap-12 mt-10 text-sm">
 
           <div>
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom */}
+        
         <div className="mt-20 border-t border-white/10 pt-6 text-center text-gray-500 text-sm">
           <div className="flex justify-center gap-6 mb-2">
             <span className="hover:text-white cursor-pointer">
