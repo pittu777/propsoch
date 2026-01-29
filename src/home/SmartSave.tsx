@@ -8,7 +8,7 @@ import {
 
 export default function SmartSave() {
   return (
-    <section className="py-24 bg-gray-900 text-white">
+    <section className="py-24 bg-gray-900 text-white reveal-section">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
       

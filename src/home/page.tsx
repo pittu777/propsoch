@@ -1,4 +1,4 @@
-import React from 'react'
+"use client";
 import NavBar from './Navbar';
 import Hero from './Hero';
 import Stats from './Stats';
@@ -12,9 +12,11 @@ import AnimatedCTA from './AnimatedCTA';
 import BlogMarquee from './BlogMarquee';
 import CommunityFAQ from './CommunityFAQ';
 import Footer from './Footer';
+import { useScrollReveal } from '@/hooks/useScrollreveal';
 
 
 const HomePage = () => {
+  useScrollReveal(".reveal-section");
   return (
     <>
    <p className="font-medium text-white bg-black fixed top-0 w-full z-50 h-6 flex items-center justify-center">

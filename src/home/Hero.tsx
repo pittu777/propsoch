@@ -1,18 +1,56 @@
 "use client";
 
+import { useEffect } from "react";
+import gsap from "gsap";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
 import heroImage from "./../../src/app/favicon.ico";
 
 export default function Hero() {
+
+  useEffect(() => {
+    const text = document.getElementById("hero-title");
+    if (!text) return;
+
+    // Split into words
+    const words = text.innerText.split(" ");
+    text.innerHTML = words
+      .map(word => `<span class="hero-word inline-block mr-2">${word}</span>`)
+      .join("");
+
+    const wordElements = document.querySelectorAll(".hero-word");
+
+    // Animate on page load
+    gsap.fromTo(
+      wordElements,
+      {
+        y: 60,
+        opacity: 0,
+        rotation: -5,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        rotation: 0,
+        duration: 1,
+        ease: "power3.out",
+        stagger: 0.08,
+      }
+    );
+  }, []);
+  
+
   return (
     <section className="mt-22 lg:mt-0 lg:min-h-[80vh] flex items-center lg:pt-24">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 items-center">
 
-        
+        {/* LEFT */}
         <div className="space-y-6 text-center lg:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          <h1
+            id="hero-title"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight"
+          >
             Stop wasting countless weekends on irrelevant visits
           </h1>
 
@@ -37,18 +75,16 @@ export default function Hero() {
           </p>
         </div>
 
-       
-<div className="hidden lg:flex relative w-full h-100 items-center justify-center">
-  <Image
-    src={heroImage}
-    alt="Hero"
-    className="rounded-2xl object-cover"
-    height={400}
-    priority
-  />
-</div>
-
-
+        {/* RIGHT */}
+        <div className="hidden lg:flex relative w-full h-100 items-center justify-center">
+          <Image
+            src={heroImage}
+            alt="Hero"
+            className="rounded-2xl object-cover"
+            height={400}
+            priority
+          />
+        </div>
 
       </div>
     </section>

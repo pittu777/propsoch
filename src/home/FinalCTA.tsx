@@ -32,7 +32,7 @@ const services = [
 
 export default function FinalCTA() {
   return (
-    <section className="py-24 bg-gray-900 text-white">
+    <section className="py-24 bg-gray-900 text-white reveal-section">
       <div className="max-w-7xl mx-auto px-6">
 
        

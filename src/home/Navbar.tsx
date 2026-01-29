@@ -43,7 +43,7 @@ export default function NavBar() {
        
         <div className="flex items-center gap-2">
           <Image src={Logo} alt="logo" width={32} height={32} />
-          <span className="font-bold text-lg">MyProduct</span>
+          <span className="font-bold text-lg">Propsoch</span>
         </div>
 
         <NavigationMenu className="hidden lg:block">

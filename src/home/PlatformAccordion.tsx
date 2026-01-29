@@ -9,7 +9,7 @@ import {
 
 export default function PlatformAccordion() {
   return (
-    <section className="py-10 bg-white">
+    <section className="py-10 bg-white reveal-section">
       <div className="max-w-5xl mx-auto px-6">
 
        

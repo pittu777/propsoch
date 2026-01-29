@@ -36,7 +36,7 @@ const testimonials = [
 
 export default function JourneyWithTestimonials() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white reveal-section">
       <div className="max-w-7xl mx-auto px-6">
 
        
